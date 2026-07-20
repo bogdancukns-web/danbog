@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #111111;
+  color: #f5f1e8;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero {
+  min-height: 100vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=1600&q=85")
+    center/cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.nav-button {
+  border: 1px solid #c7a86c;
+  padding: 10px 14px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 850px;
+  margin: auto 0;
+  padding: 100px 0 60px;
+}
+
+.small-title,
+.section-label {
+  color: #c7a86c;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  max-width: 800px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 12vw, 92px);
+  font-weight: 400;
+  line-height: 0.98;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin: 28px 0;
+  color: #dedbd4;
+  font-size: 18px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.primary-button,
+.secondary-button {
+  display: inline-block;
+  padding: 15px 22px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.primary-button {
+  background: #c7a86c;
+  color: #111111;
+}
+
+.secondary-button {
+  border: 1px solid #f5f1e8;
+}
+
+.section,
+.services-section,
+.contact-section {
+  padding: 90px 24px;
+}
+
+.section {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  max-width: 750px;
+  margin-bottom: 24px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(38px, 9vw, 64px);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.section-text {
+  max-width: 720px;
+  color: #bbb7af;
+  font-size: 18px;
+}
+
+.services-section {
+  background: #ebe5d9;
+  color: #151515;
+}
+
+.services-section > h2,
+.services-section > .section-label,
+.service-grid {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-grid {
+  display: grid;
+  gap: 18px;
+  margin-top: 45px;
+}
+
+.service-card {
+  min-height: 260px;
+  padding: 28px;
+  border: 1px solid #c8c0b2;
+}
+
+.service-card span {
+  color: #8c6c35;
+  font-size: 13px;
+}
+
+.service-card h3 {
+  margin: 60px 0 14px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.service-card p {
+  color: #59554f;
+}
+
+.occasions {
+  text-align: center;
+}
+
+.occasions h2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.occasion-list {
+  margin-top: 40px;
+  border-top: 1px solid #3f3f3f;
+}
+
+.occasion-list p {
+  padding: 18px 5px;
+  border-bottom: 1px solid #3f3f3f;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+}
+
+.contact-section {
+  text-align: center;
+  background: #1a1a1a;
+}
+
+.contact-section h2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-section > p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #bbb7af;
+}
+
+.contact-note {
+  margin-top: 24px !important;
+  font-size: 13px;
+}
+
+footer {
+  padding: 25px;
+  border-top: 1px solid #333333;
+  color: #858585;
+  text-align: center;
+  font-size: 13px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 35px 7%;
+  }
+
+  .section,
+  .services-section,
+  .contact-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
