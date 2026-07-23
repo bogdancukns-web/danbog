@@ -12,7 +12,7 @@
 
   <meta
     name="description"
-    content="Premium mobile bar and cocktail catering in Budapest for weddings, corporate events and private celebrations."
+    content="Premium mobile bar and cocktail catering in Budapest for weddings, private celebrations and corporate events."
   >
 
   <link rel="stylesheet" href="style.css">
@@ -22,20 +22,57 @@
 
   <header class="hero" id="home">
 
+    <div class="background-slider">
+      <div class="slide active" style="background-image: url('cocktail-1.jpg');"></div>
+      <div class="slide" style="background-image: url('cocktail-2.jpg');"></div>
+      <div class="slide" style="background-image: url('cocktail-3.jpg');"></div>
+      <div class="slide" style="background-image: url('cocktail-4.jpg');"></div>
+      <div class="slide" style="background-image: url('cocktail-5.jpg');"></div>
+    </div>
+
+    <div class="hero-overlay"></div>
+
     <nav class="navbar">
+
       <a class="brand" href="#home">
         <span class="brand-monogram">DB</span>
 
         <span class="brand-name">
           DANBOG
-          <small>Mobile Bar</small>
+          <small>Mobile Bar & Cocktail Catering</small>
         </span>
       </a>
 
-      <a class="nav-contact" href="#contact">
-        Book an Event
-      </a>
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
     </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+
+      <button
+        class="menu-close"
+        id="menuClose"
+        aria-label="Close menu"
+      >
+        ×
+      </button>
+
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#cocktails">Cocktails</a>
+      <a href="#packages">Packages</a>
+      <a href="#contact">Contact</a>
+
+    </div>
 
     <div class="hero-content">
 
@@ -49,105 +86,22 @@
       </h1>
 
       <p class="hero-description">
-        Premium cocktails, signature creations and elegant mobile bar
-        service for weddings, corporate events and private celebrations
-        in Budapest.
+        Elegant mobile bar service, signature cocktails and premium
+        hospitality for weddings, private celebrations and corporate
+        events in Budapest.
       </p>
 
       <div class="hero-buttons">
 
-        <a
-          class="gold-button"
-          href="mailto:danbog.bar@gmail.com?subject=Danbog event enquiry"
-        >
+        <a class="gold-button" href="#contact">
           Request an Offer
         </a>
 
-        <a class="outline-button" href="#about">
-          Discover Danbog
+        <a class="outline-button" href="#services">
+          Explore Our Services
         </a>
 
       </div>
-
-    </div>
-
-    <div class="parliament">
-
-      <svg
-        viewBox="0 0 1000 260"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-label="Budapest Parliament illustration"
-      >
-
-        <g
-          fill="none"
-          stroke="currentColor"
-          stroke-width="7"
-          stroke-linejoin="round"
-          stroke-linecap="round"
-        >
-
-          <path d="M80 220H920"/>
-
-          <path d="M120 220V150H175V220"/>
-
-          <path d="M145 150V105L175 85L205 105V220"/>
-
-          <path d="M205 220V135H265V220"/>
-
-          <path d="M230 135V95L265 70L300 95V220"/>
-
-          <path d="M300 220V120H370V220"/>
-
-          <path d="M340 120V85H370V220"/>
-
-          <path d="M370 220V105H430V220"/>
-
-          <path d="M410 105V75H450V220"/>
-
-          <path d="M450 220V95H550V220"/>
-
-          <path d="M470 95C470 55 485 25 500 10"/>
-
-          <path d="M530 95C530 55 515 25 500 10"/>
-
-          <path d="M475 95H525"/>
-
-          <path d="M500 10V0"/>
-
-          <path d="M550 220V105H610V220"/>
-
-          <path d="M590 105V75H630V220"/>
-
-          <path d="M630 220V120H700V220"/>
-
-          <path d="M660 120V85H700V220"/>
-
-          <path d="M700 220V135H760V220"/>
-
-          <path d="M735 135V95L770 70L805 95V220"/>
-
-          <path d="M805 220V150H860V220"/>
-
-          <path d="M830 150V105L860 85L890 105V220"/>
-
-          <path d="M120 180H890"/>
-
-          <path d="M155 165V195"/>
-          <path d="M245 150V195"/>
-          <path d="M325 140V195"/>
-          <path d="M395 125V195"/>
-          <path d="M470 120V195"/>
-          <path d="M500 120V195"/>
-          <path d="M530 120V195"/>
-          <path d="M605 125V195"/>
-          <path d="M675 140V195"/>
-          <path d="M755 150V195"/>
-          <path d="M845 165V195"/>
-
-        </g>
-
-      </svg>
 
     </div>
 
@@ -155,7 +109,7 @@
 
   <main>
 
-    <section class="about section" id="about">
+    <section class="section" id="about">
 
       <p class="section-label">ABOUT US</p>
 
@@ -163,23 +117,20 @@
         Cocktails are more than just drinks.
       </h2>
 
-      <div class="about-grid">
+      <div class="two-column">
 
-        <div class="about-intro">
-          <p>
-            At Danbog Mobile Bar, we believe that cocktails are more
-            than just drinks — they are part of the atmosphere,
-            the celebration and the memories your guests will take home.
-          </p>
-        </div>
+        <p class="large-text">
+          At Danbog Mobile Bar, we believe that cocktails are part of
+          the atmosphere, the celebration and the memories your guests
+          will take home.
+        </p>
 
-        <div class="about-text">
+        <div class="regular-text">
 
           <p>
             We are two professional bartenders, each with more than
-            five years of experience in luxury hospitality,
-            five-star hotels, weddings, private celebrations
-            and exclusive events.
+            five years of experience in luxury hospitality, five-star
+            hotels, weddings, private celebrations and exclusive events.
           </p>
 
           <p>
@@ -189,9 +140,7 @@
 
           <p>
             We combine elegance, creativity and attention to detail
-            to create unforgettable moments for every occasion —
-            from intimate gatherings to large weddings
-            and corporate events.
+            to create unforgettable moments for every occasion.
           </p>
 
         </div>
@@ -200,198 +149,236 @@
 
     </section>
 
-    <section class="why-us section">
+    <section class="image-section image-one">
 
-      <p class="section-label">WHY CHOOSE US?</p>
+      <div class="image-overlay"></div>
 
-      <h2>
-        Professional service.
-        Premium experience.
-      </h2>
+      <div class="image-content">
+        <p>PREMIUM EXPERIENCE</p>
 
-      <div class="features">
-
-        <article class="feature-card">
-          <span class="feature-number">01</span>
-
-          <h3>Experienced Bartenders</h3>
-
-          <p>
-            Two professional bartenders with more than five years
-            of experience each.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <span class="feature-number">02</span>
-
-          <h3>Luxury Hospitality</h3>
-
-          <p>
-            Extensive experience in five-star hotels,
-            weddings and luxury events.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <span class="feature-number">03</span>
-
-          <h3>Elegant Mobile Bar</h3>
-
-          <p>
-            A stylish and professional bar setup adapted
-            to your venue and event.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <span class="feature-number">04</span>
-
-          <h3>Premium Ingredients</h3>
-
-          <p>
-            Carefully selected spirits, fresh ingredients
-            and high-quality cocktail preparation.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <span class="feature-number">05</span>
-
-          <h3>Personalized Menus</h3>
-
-          <p>
-            Signature cocktail menus designed specifically
-            for your event and your guests.
-          </p>
-        </article>
-
-        <article class="feature-card">
-          <span class="feature-number">06</span>
-
-          <h3>Reliable Service</h3>
-
-          <p>
-            Friendly, reliable and detail-oriented service
-            from planning until the final cocktail.
-          </p>
-        </article>
-
+        <h2>
+          Crafted with creativity.
+          Served with elegance.
+        </h2>
       </div>
 
     </section>
 
-    <section class="services section" id="services">
+    <section class="section" id="services">
 
       <p class="section-label">OUR SERVICES</p>
 
       <h2>
-        The complete cocktail experience
-        at your location.
+        Everything you need for an unforgettable bar experience.
       </h2>
 
-      <div class="services-list">
+      <div class="cards">
 
-        <article class="service">
+        <article class="card">
           <span>01</span>
-
-          <div>
-            <h3>Premium Mobile Bar</h3>
-
-            <p>
-              A complete mobile bar service prepared
-              for your location, guest count and event style.
-            </p>
-          </div>
+          <h3>Premium Mobile Bar</h3>
+          <p>
+            Complete mobile bar service adapted to your venue,
+            guest count and event style.
+          </p>
         </article>
 
-        <article class="service">
+        <article class="card">
           <span>02</span>
-
-          <div>
-            <h3>Signature Cocktails</h3>
-
-            <p>
-              Personalized cocktail creations designed
-              especially for your celebration or brand.
-            </p>
-          </div>
+          <h3>Signature Cocktails</h3>
+          <p>
+            Personalized cocktail menus created specifically
+            for your event.
+          </p>
         </article>
 
-        <article class="service">
+        <article class="card">
           <span>03</span>
-
-          <div>
-            <h3>Weddings</h3>
-
-            <p>
-              Elegant cocktail service for wedding receptions,
-              welcome drinks and unforgettable celebrations.
-            </p>
-          </div>
+          <h3>Weddings</h3>
+          <p>
+            Elegant cocktail catering for wedding receptions,
+            welcome drinks and celebrations.
+          </p>
         </article>
 
-        <article class="service">
+        <article class="card">
           <span>04</span>
-
-          <div>
-            <h3>Corporate Events</h3>
-
-            <p>
-              Professional bar service for company parties,
-              openings, promotions and branded events.
-            </p>
-          </div>
-        </article>
-
-        <article class="service">
-          <span>05</span>
-
-          <div>
-            <h3>Private Events</h3>
-
-            <p>
-              Premium cocktail catering for birthdays,
-              anniversaries and intimate private celebrations.
-            </p>
-          </div>
+          <h3>Corporate Events</h3>
+          <p>
+            Professional mobile bar service for company parties,
+            promotions and branded events.
+          </p>
         </article>
 
       </div>
 
     </section>
 
-    <section class="statement">
+    <section class="section" id="cocktails">
 
-      <div class="statement-border">
+      <p class="section-label">COCKTAILS</p>
 
-        <p>AT DANBOG</p>
+      <h2>
+        Colorful, fresh and made to impress.
+      </h2>
 
-        <h2>
-          Every cocktail is prepared
-          with elegance, creativity
-          and attention to detail.
-        </h2>
+      <div class="gallery">
 
-        <span>Budapest, Hungary</span>
+        <img src="cocktail-1.jpg" alt="Danbog cocktail">
+        <img src="cocktail-2.jpg" alt="Danbog cocktail catering">
+        <img src="cocktail-3.jpg" alt="Danbog mobile bar">
+        <img src="cocktail-4.jpg" alt="Danbog signature cocktails">
+        <img src="cocktail-5.jpg" alt="Danbog cocktail preparation">
 
       </div>
 
     </section>
 
-    <section class="contact section" id="contact">
+    <section class="section" id="packages">
+
+      <p class="section-label">PACKAGES</p>
+
+      <h2>
+        Flexible packages for different events.
+      </h2>
+
+      <div class="cards">
+
+        <article class="card">
+          <span>BASIC</span>
+
+          <h3>Essential Bar Service</h3>
+
+          <p>
+            Bartender service, basic bar equipment and a selected
+            cocktail menu.
+          </p>
+        </article>
+
+        <article class="card">
+          <span>PREMIUM</span>
+
+          <h3>Full Cocktail Experience</h3>
+
+          <p>
+            Mobile bar setup, premium ingredients, personalized menu
+            and professional cocktail service.
+          </p>
+        </article>
+
+        <article class="card">
+          <span>CUSTOM</span>
+
+          <h3>Tailored Event Package</h3>
+
+          <p>
+            A completely personalized package based on your venue,
+            guest count and event requirements.
+          </p>
+        </article>
+
+      </div>
+
+      <p class="package-note">
+        Final prices depend on the number of guests, location,
+        duration and selected cocktails.
+      </p>
+
+    </section>
+
+    <section class="parliament-section">
+
+      <div class="parliament-art">
+
+        <svg
+          viewBox="0 0 1200 350"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-label="Hungarian Parliament"
+        >
+
+          <g
+            fill="none"
+            stroke="currentColor"
+            stroke-width="4"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+          >
+
+            <path d="M40 310H1160"/>
+
+            <path d="M90 310V225H155V310"/>
+            <path d="M115 225V180H130V140H145V180H160V225"/>
+
+            <path d="M155 310V205H230V310"/>
+            <path d="M180 205V150H192V120H205V150H218V205"/>
+
+            <path d="M230 310V190H325V310"/>
+            <path d="M250 190V145H270V110H287V145H307V190"/>
+
+            <path d="M325 310V170H440V310"/>
+            <path d="M350 170V125H375V90H395V125H420V170"/>
+
+            <path d="M440 310V145H500V310"/>
+
+            <path d="M500 310V125H700V310"/>
+
+            <path d="M530 125C530 80 555 40 600 20"/>
+            <path d="M670 125C670 80 645 40 600 20"/>
+            <path d="M545 125H655"/>
+            <path d="M600 20V5"/>
+
+            <path d="M560 125V95H640V125"/>
+            <path d="M580 95V65H620V95"/>
+
+            <path d="M700 310V145H760V310"/>
+
+            <path d="M760 310V170H875V310"/>
+            <path d="M780 170V125H805V90H825V125H850V170"/>
+
+            <path d="M875 310V190H970V310"/>
+            <path d="M893 190V145H913V110H930V145H950V190"/>
+
+            <path d="M970 310V205H1045V310"/>
+            <path d="M982 205V150H995V120H1008V150H1020V205"/>
+
+            <path d="M1045 310V225H1110V310"/>
+            <path d="M1058 225V180H1073V140H1088V180H1100V225"/>
+
+            <path d="M90 250H1110"/>
+            <path d="M145 225V285"/>
+            <path d="M195 215V285"/>
+            <path d="M270 205V285"/>
+            <path d="M385 185V285"/>
+            <path d="M470 165V285"/>
+            <path d="M540 150V285"/>
+            <path d="M580 145V285"/>
+            <path d="M620 145V285"/>
+            <path d="M660 150V285"/>
+            <path d="M730 165V285"/>
+            <path d="M815 185V285"/>
+            <path d="M930 205V285"/>
+            <path d="M1005 215V285"/>
+            <path d="M1055 225V285"/>
+
+            <path d="M70 285H1130"/>
+
+          </g>
+
+        </svg>
+
+      </div>
+
+      <p>BUDAPEST, HUNGARY</p>
+
+    </section>
+
+    <section class="section contact-section" id="contact">
 
       <p class="section-label">CONTACT</p>
 
       <h2>
-        Let us create something memorable
-        for your event.
+        Let us create something memorable for your event.
       </h2>
-
-      <p class="contact-intro">
-        Tell us the date, location, type of event and estimated
-        number of guests. We will contact you with a personalized offer.
-      </p>
 
       <div class="contact-grid">
 
@@ -400,10 +387,7 @@
           <strong>+36 20 257 3150</strong>
         </a>
 
-        <a
-          href="mailto:danbog.bar@gmail.com"
-          class="contact-card"
-        >
+        <a href="mailto:danbog.bar@gmail.com" class="contact-card">
           <span>EMAIL</span>
           <strong>danbog.bar@gmail.com</strong>
         </a>
@@ -426,8 +410,8 @@
       </div>
 
       <a
-        class="gold-button final-button"
-        href="mailto:danbog.bar@gmail.com?subject=Danbog Mobile Bar event enquiry"
+        class="gold-button"
+        href="mailto:danbog.bar@gmail.com?subject=Danbog event enquiry"
       >
         Request a Personalized Offer
       </a>
@@ -437,20 +421,9 @@
   </main>
 
   <footer>
-
-    <div class="footer-logo">
-      <span>DB</span>
-      <strong>DANBOG</strong>
-    </div>
-
-    <p>
-      Premium Mobile Bar & Cocktail Catering
-    </p>
-
-    <p>
-      © 2026 Danbog Mobile Bar. All rights reserved.
-    </p>
-
+    <p>DANBOG</p>
+    <span>Premium Mobile Bar & Cocktail Catering</span>
+    <span>© 2026 Danbog Mobile Bar</span>
   </footer>
 
   <script src="script.js"></script>
